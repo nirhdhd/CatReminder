@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#f8f6f2">
-  <meta name="description" content="מדיניות הפרטיות והסבר על הסכמה למודעות באפליקציית CatReminder.">
-  <title>מדיניות פרטיות | CatReminder</title>
+  <meta name="description" content="CatReminder privacy policy and information about consent for ads.">
+  <title>Privacy Policy | CatReminder</title>
   <style>
     :root {
       font-family: Arial, "Noto Sans Hebrew", "Segoe UI", sans-serif;
@@ -44,7 +44,7 @@
     .summary { border-color: #dbd7f2; background: #f4f1ff; }
     .summary p { color: #3e3c62; }
     .consent { border-color: #d6e7e1; background: #f4faf7; }
-    .quote { padding: 18px 20px; margin: 18px 0; border-right: 3px solid #6b9b8e; border-radius: 12px 0 0 12px; background: #fff; color: #344b48; }
+    .quote { padding: 18px 20px; margin: 18px 0; border-inline-start: 3px solid #6b9b8e; border-radius: 12px; background: #fff; color: #344b48; }
     .quote strong { display: block; margin-bottom: 8px; }
     .choices { font-size: .86rem; font-weight: 700; color: #426458; }
     .side { position: sticky; top: 24px; padding: 21px; border: 1px solid #ece9e7; border-radius: 18px; background: #fff; }
@@ -63,50 +63,138 @@
       .card { border-radius: 18px; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  
+    [hidden] { display: none !important; }
+    .top-actions { display: flex; gap: 20px; align-items: center; }
+    .language-switch { display: inline-flex; gap: 3px; padding: 4px; border: 1px solid #dedce7; border-radius: 11px; background: #f6f5fa; }
+    .language-switch button { border: 0; border-radius: 8px; padding: 6px 11px; background: transparent; color: #4f596d; font: inherit; font-size: .82rem; font-weight: 700; cursor: pointer; }
+    .language-switch button[aria-pressed="true"] { background: #fff; color: #3c3478; box-shadow: 0 1px 4px rgba(37,34,82,.13); }
+    .language-switch button:focus-visible { outline: 3px solid #716bc1; outline-offset: 2px; }
+    @media (max-width: 500px) { .top-actions { gap: 10px; } .topbar .shell { flex-wrap: wrap; } }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="shell">
-      <div class="brand"><span class="brand-mark" aria-hidden="true">🐾</span><span lang="en" dir="ltr">CatReminder</span></div>
-      <a href="#contact">יצירת קשר</a>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">🐾</span><span>CatReminder</span></div>
+      <div class="top-actions">
+        <a id="contact-link" href="#en-contact">Contact</a>
+        <div class="language-switch" role="group" aria-label="Language / שפה">
+          <button type="button" id="language-en" lang="en" aria-pressed="true">English</button>
+          <button type="button" id="language-he" lang="he" aria-pressed="false">עברית</button>
+        </div>
+      </div>
     </div>
   </header>
-
+  <div id="en-content" lang="en" dir="ltr">
   <div class="shell">
-    <section class="hero" aria-labelledby="page-title">
+    <section class="hero" aria-labelledby="en-page-title">
+      <div class="eyebrow">CATREMINDER · PRIVACY & TRANSPARENCY</div>
+      <h1 id="en-page-title">Privacy policy</h1>
+      <p class="lead">Your reminders are in good paws. Here's what stays on your device, how ads work, and what you can choose.</p>
+      <p class="updated">Last updated: September 27, 2026</p>
+    </section>
+
+    <div class="layout">
+      <main>
+        <section class="card summary" aria-labelledby="en-overview">
+          <h2 id="en-overview">At a glance</h2>
+          <p>CatReminder stores your reminders and preferences on your device so it can show your reminders on time. The app displays ads through Google AdMob. Watching an ad to unlock a cat is your choice. Google's tools manage the privacy choices described below.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-operator">
+          <h2 id="en-operator">Who operates the app</h2>
+          <p>CatReminder is operated by Nirhdhd. For privacy questions, contact nirhdhdwork@gmail.com.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-local-data">
+          <h2 id="en-local-data">Reminders, images and preferences</h2>
+          <p>Your reminder details, chosen cats and app preferences are stored on your device to run your reminders. If you select a personal image, the app uses that image to display it with your reminder. The app does not intentionally send the contents of your reminders or your selected images to AdMob for ad targeting.</p>
+          <p>Depending on your Android version and device backup settings, reminders and preferences may be included in an operating system backup or transfer to another device. Under the app's backup rules, the premium-cat entitlement file is excluded from those backups and transfers.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-ads">
+          <h2 id="en-ads">Ads and information processed by Google</h2>
+          <p>The app uses Google AdMob for banner ads and rewarded ads that you choose to watch to unlock a cat. To serve and measure ads and prevent fraud, Google's advertising services may process your IP address, interactions with ads, performance and diagnostic information, and device or advertising identifiers when available. Your IP address may be used to estimate your approximate location.</p>
+          <p>For more information, see <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a>. You can also manage your advertising ID through Android settings.</p>
+        </section>
+
+        <section class="card consent" aria-labelledby="en-consent">
+          <h2 id="en-consent">Consent message for ads</h2>
+          <p>When a privacy choice is required for advertising, the consent message is shown <strong>inside the app</strong> through Google's User Messaging Platform. This is an explanation of that message:</p>
+          <div class="quote">
+            <strong>Your choices about ads in CatReminder</strong>
+            CatReminder displays ads through Google AdMob. Depending on your choices, Google and its advertising partners may use information from your device and ad activity to show and measure ads, including personalized ads. You can choose whether to consent or manage your privacy options. Your reminders will continue to work if you do not consent; an ad to unlock a cat may not always be available.
+          </div>
+          <p class="choices">In the app: Consent · Do not consent · Manage options</p>
+          <p>This website is for information only. You make your consent choices in the app's message. When required, you can revisit them through “Privacy options” in the app.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-permissions">
+          <h2 id="en-permissions">Device permissions</h2>
+          <p>CatReminder may ask for permission to send notifications, display an overlay over other apps, schedule exact alarms and run the services needed to show reminders on time. You can manage these permissions in Android settings. Disabling them may affect your reminders.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-deletion">
+          <h2 id="en-deletion">Retention and deletion</h2>
+          <p>You can delete reminders in the app. Uninstalling the app removes its local data from your device, though copies already made by your operating system's backup service may remain under that provider's settings. Information processed by Google for advertising is retained and managed under Google's policies.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-contact">
+          <h2 id="en-contact">Changes and contact</h2>
+          <p>If our data practices change, we will update this policy and the date at the top of this page. For privacy questions or requests, write to <span class="placeholder">[Contact email address]</span>.</p>
+        </section>
+      </main>
+
+      <aside class="side" aria-label="On this page">
+        <h2>On this page</h2>
+        <nav aria-label="Privacy policy sections">
+          <a href="#en-overview">Overview</a>
+          <a href="#en-local-data">On-device data</a>
+          <a href="#en-ads">Advertising</a>
+          <a href="#en-consent">Consent message</a>
+          <a href="#en-permissions">Permissions</a>
+          <a href="#en-deletion">Retention & deletion</a>
+          <a href="#en-contact">Contact</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+  </div>
+  <div id="he-content" lang="he" dir="rtl" hidden>  <div class="shell">
+    <section class="hero" aria-labelledby="he-page-title">
       <div class="eyebrow">CATREMINDER · פרטיות ושקיפות</div>
-      <h1 id="page-title">מדיניות פרטיות</h1>
+      <h1 id="he-page-title">מדיניות פרטיות</h1>
       <p class="lead">התזכורות שלך בכפות טובות. כאן נסביר בפשטות מה נשמר במכשיר, כיצד פועלות המודעות ומה אפשר לבחור.</p>
       <p class="updated">עדכון אחרון: 27 בספטמבר 2026</p>
     </section>
 
     <div class="layout">
       <main>
-        <section class="card summary" aria-labelledby="overview">
-          <h2 id="overview">בקצרה</h2>
+        <section class="card summary" aria-labelledby="he-overview">
+          <h2 id="he-overview">בקצרה</h2>
           <p>CatReminder שומרת את התזכורות וההעדפות שלך במכשיר כדי להציג אותן בזמן. האפליקציה מציגה מודעות באמצעות Google AdMob, ופתיחת חתול באמצעות מודעה היא בחירה של המשתמש. פרטי ההסכמה למודעות מנוהלים באמצעות הכלים של Google, כפי שמוסבר בהמשך.</p>
         </section>
 
-        <section class="card" aria-labelledby="operator">
-          <h2 id="operator">מפעיל האפליקציה</h2>
-          <p>CatReminder מופעלת בידי nirhdhd. לפניות בנושא פרטיות אפשר לכתוב אל nirhdhdwork@gmail.com.</p>
+        <section class="card" aria-labelledby="he-operator">
+          <h2 id="he-operator">מפעיל האפליקציה</h2>
+          <p>CatReminder מופעלת בידי <span class="placeholder">[שם המפתח כפי שמופיע ב־Google Play]</span>. לפניות בנושא פרטיות אפשר לכתוב אל <span class="placeholder" dir="ltr">[כתובת אימייל ליצירת קשר]</span>.</p>
         </section>
 
-        <section class="card" aria-labelledby="local-data">
-          <h2 id="local-data">תזכורות, תמונות והעדפות</h2>
+        <section class="card" aria-labelledby="he-local-data">
+          <h2 id="he-local-data">תזכורות, תמונות והעדפות</h2>
           <p>פרטי התזכורות, בחירת החתולים והעדפות האפליקציה נשמרים במכשיר לצורך הפעלת התזכורות. אם בחרת תמונה אישית, האפליקציה משתמשת בתמונה שבחרת כדי להציג אותה בתזכורת. תוכן התזכורות והתמונות שבחרת אינם נשלחים ביוזמת האפליקציה ל־AdMob לצורך התאמת מודעות.</p>
           <p>בהתאם לגרסת Android ולהגדרות הגיבוי במכשיר, תזכורות והעדפות עשויות להיכלל בגיבוי של מערכת ההפעלה או בהעברה למכשיר אחר. לפי הגדרות הגיבוי של האפליקציה, קובץ הזכאות לחתולי פרימיום מוחרג מגיבוי ומהעברה אלה.</p>
         </section>
 
-        <section class="card" aria-labelledby="ads">
-          <h2 id="ads">מודעות ונתונים המעובדים בידי Google</h2>
+        <section class="card" aria-labelledby="he-ads">
+          <h2 id="he-ads">מודעות ונתונים המעובדים בידי Google</h2>
           <p>האפליקציה משתמשת ב־Google AdMob להצגת מודעות באנר ומודעות מתגמלות שהמשתמש בוחר לצפות בהן כדי לפתוח חתול. לצורך הצגת מודעות, מדידה ומניעת הונאה, שירותי הפרסום של Google עשויים לעבד כתובת IP, מידע על אינטראקציות עם מודעות, מידע על תקלות וביצועים, ומזהי מכשיר ופרסום ככל שהם זמינים. כתובת IP עשויה לשמש להערכת מיקום כללי.</p>
           <p>למידע נוסף על השימוש של Google בנתונים, ראו את <a href="https://policies.google.com/privacy" rel="noopener noreferrer">מדיניות הפרטיות של Google</a>. השימוש במזהה הפרסום נתון גם לבחירות שלך בהגדרות Android.</p>
         </section>
 
-        <section class="card consent" aria-labelledby="consent">
-          <h2 id="consent">הודעת הסכמה למודעות</h2>
+        <section class="card consent" aria-labelledby="he-consent">
+          <h2 id="he-consent">הודעת הסכמה למודעות</h2>
           <p>כאשר נדרשת בחירה לגבי עיבוד נתונים לפרסום, הודעת ההסכמה מוצגת <strong>בתוך האפליקציה</strong> באמצעות Google User Messaging Platform. הנוסח הבא מסביר מה מוצג שם:</p>
           <div class="quote">
             <strong>הבחירה שלך לגבי מודעות ב־CatReminder</strong>
@@ -116,18 +204,18 @@
           <p>האתר הזה מספק מידע בלבד; בחירת ההסכמה נעשית בהודעה שבאפליקציה. כשהדבר נדרש, אפשר לפתוח אותה שוב דרך ״אפשרויות פרטיות״ באפליקציה.</p>
         </section>
 
-        <section class="card" aria-labelledby="permissions">
-          <h2 id="permissions">הרשאות המכשיר</h2>
+        <section class="card" aria-labelledby="he-permissions">
+          <h2 id="he-permissions">הרשאות המכשיר</h2>
           <p>CatReminder עשויה לבקש הרשאות להתראות, להצגת חלונית מעל אפליקציות אחרות, לתזמון מדויק ולפעילות הנדרשת להצגת תזכורת בזמן. אפשר לנהל הרשאות אלה דרך הגדרות Android. ביטול הרשאה עשוי להשפיע על פעולת התזכורות.</p>
         </section>
 
-        <section class="card" aria-labelledby="deletion">
-          <h2 id="deletion">שמירה ומחיקה</h2>
+        <section class="card" aria-labelledby="he-deletion">
+          <h2 id="he-deletion">שמירה ומחיקה</h2>
           <p>אפשר למחוק תזכורות מתוך האפליקציה. הסרת האפליקציה מוחקת את נתוניה המקומיים מהמכשיר, אך עותקי גיבוי שמערכת ההפעלה כבר יצרה עשויים להישמר לפי הגדרות ספק הגיבוי. נתונים שמעובדים בידי Google לצורכי פרסום נשמרים ומנוהלים בהתאם למדיניות שלה.</p>
         </section>
 
-        <section class="card" aria-labelledby="contact">
-          <h2 id="contact">שינויים ויצירת קשר</h2>
+        <section class="card" aria-labelledby="he-contact">
+          <h2 id="he-contact">שינויים ויצירת קשר</h2>
           <p>אם אופן הטיפול במידע ישתנה, נעדכן את המדיניות ואת תאריך העדכון בראש העמוד. לשאלות או לבקשות בנושא פרטיות אפשר לפנות אל nirhdhdwork@gmail.com.</p>
         </section>
       </main>
@@ -135,18 +223,51 @@
       <aside class="side" aria-label="ניווט בעמוד">
         <h2>בעמוד הזה</h2>
         <nav aria-label="סעיפי המדיניות">
-          <a href="#overview">סקירה קצרה</a>
-          <a href="#local-data">נתונים במכשיר</a>
-          <a href="#ads">מודעות</a>
-          <a href="#consent">הודעת הסכמה</a>
-          <a href="#permissions">הרשאות</a>
-          <a href="#deletion">שמירה ומחיקה</a>
-          <a href="#contact">יצירת קשר</a>
+          <a href="#he-overview">סקירה קצרה</a>
+          <a href="#he-local-data">נתונים במכשיר</a>
+          <a href="#he-ads">מודעות</a>
+          <a href="#he-consent">הודעת הסכמה</a>
+          <a href="#he-permissions">הרשאות</a>
+          <a href="#he-deletion">שמירה ומחיקה</a>
+          <a href="#he-contact">יצירת קשר</a>
         </nav>
       </aside>
     </div>
   </div>
 
-  <footer><div class="shell"><span lang="en" dir="ltr">CatReminder</span> · מדיניות פרטיות</div></footer>
+  </div>
+  <footer><div class="shell"><span>CatReminder</span> · <span id="footer-label">Privacy policy</span></div></footer>
+  <script>
+    const sections = { en: document.getElementById('en-content'), he: document.getElementById('he-content') };
+    const buttons = { en: document.getElementById('language-en'), he: document.getElementById('language-he') };
+    const contact = document.getElementById('contact-link');
+    const footer = document.getElementById('footer-label');
+    const description = document.querySelector('meta[name="description"]');
+
+    function setLanguage(language) {
+      const hebrew = language === 'he';
+      sections.en.hidden = hebrew;
+      sections.he.hidden = !hebrew;
+      buttons.en.setAttribute('aria-pressed', String(!hebrew));
+      buttons.he.setAttribute('aria-pressed', String(hebrew));
+      document.documentElement.lang = language;
+      document.documentElement.dir = hebrew ? 'rtl' : 'ltr';
+      document.title = hebrew ? 'מדיניות פרטיות | CatReminder' : 'Privacy Policy | CatReminder';
+      description.content = hebrew
+        ? 'מדיניות הפרטיות והסבר על הסכמה למודעות באפליקציית CatReminder.'
+        : 'CatReminder privacy policy and information about consent for ads.';
+      contact.href = hebrew ? '#he-contact' : '#en-contact';
+      contact.textContent = hebrew ? 'יצירת קשר' : 'Contact';
+      footer.textContent = hebrew ? 'מדיניות פרטיות' : 'Privacy policy';
+      if (location.hash && location.hash.startsWith(hebrew ? '#en-' : '#he-')) {
+        history.replaceState(null, '', location.pathname + location.search);
+      }
+    }
+
+    buttons.en.addEventListener('click', () => setLanguage('en'));
+    buttons.he.addEventListener('click', () => setLanguage('he'));
+    // Always start in English; the visitor can choose Hebrew with the switch above.
+    if (location.hash.startsWith('#he-')) setLanguage('he');
+  </script>
 </body>
 </html>
